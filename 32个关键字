@@ -1,0 +1,65 @@
+C语言32个关键字初始
+数据类型关键字（12个）：
+序号 关键字      说明
+1 char        字符变量
+2 double      双精度变量
+3 float       浮点型变量
+4 int         整型变量
+5 short       短整型变量
+6 long        长整型变量
+7 unsigned    无符号类型变量
+8 signed      有符号类型变量
+9 struct      结构体变量
+10 union      共用体或联合数据类型
+11 void       函数无返回值或无参数，无类型指针
+12 enum       枚举类型
+控制语句关键字（12个）：
+循环控制（5个）
+序号 关键字            说明
+
+1      for             for循环
+2      while         while循环
+3      do             do while循环
+4      break        跳出循环
+5      continue   结束本次循环执行下次循环
+条件语句（3个）
+序号 关键字           说明
+1      if            如果
+2     else           否则
+3     goto           goto aging到标记aging的地方去
+开关语句（3个）
+序号 关键字            说明
+1      switch        switch()语句
+2      case          case 1：
+3      default       default：
+返回语句（1个）
+1       return         return 0;  return a;
+存储关键字（5个）：
+序号   关键字             说明
+1      auto           自动变量
+2      extern       声明外部变量
+3     register      请求把变量放寄存器里
+4     static          静态变量
+5     typedef       类型重命名
+其他关键字（3个）：
+1      volatile      可以被修改变量
+2      const        不可被修改变量
+3      sizeof        计算大小
+操作符
+&按位与，a&b，都是0为0，都是1为1，1 0为0
+|按位或，a|b，都是0为0，都是1为1，1 0为1
+^异或同为0，不同为1，a^a=0，a^0=a，a^b
+用sizeof计算各类型占用空间在32位，64位系统各有差异
+#include <stdio.h>
+int main()
+{
+    printf("%d\n", sizeof(char));
+    printf("%d\n", sizeof(short));
+    printf("%d\n", sizeof(int));
+    printf("%d\n", sizeof(long));
+    printf("%d\n", sizeof(long long));
+    printf("%d\n", sizeof(float));
+    printf("%d\n", sizeof(double));
+    printf("%d\n", sizeof(long double));
+    return 0;
+}
